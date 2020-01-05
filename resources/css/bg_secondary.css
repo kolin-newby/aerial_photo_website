@@ -1,0 +1,15 @@
+body, html {
+  height: 100%;
+}
+.bg_secondary{
+  /* The image used */
+  background-image: url("../img/bg2.jpg");
+
+  /* Half height */
+  height: 30%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
