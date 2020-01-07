@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/'));
 
 // home page
 app.get('/', (req, res) => {
-	response.render('home')
+	response.render('home.pug')
 })
 
 var port = 2048;
