@@ -22,15 +22,15 @@ app.use(express.static('public/resources'));
 
 // home page
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname,'home.html'));
+	res.sendFile(path.join(__dirname + 'public' + 'views' + 'home.html'));
 });
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname,'events.html'));
+	res.sendFile(path.join(__dirname + 'public' + 'views' + 'events.html'));
 });
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'views', 'realty_comm.html'));
+	res.sendFile(path.join(__dirname + 'public' + 'views' + 'realty_comm.html'));
 });
 
 const port = 2048;
