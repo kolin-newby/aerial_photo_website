@@ -17,6 +17,6 @@ app.use(express.static(path.join(__dirname, 'views')));
 // 	res.sendFile(path.join(__dirname, 'views', 'home.html'));
 // });
 
-var port = 3000;
+const port = 3000;
 app.listen(port);
 console.log('listening on port ' + port);
