@@ -9,7 +9,7 @@ let app = express();
 
 // home page
 app.get('/' function(req, resp){
-	resp.sendFile('home.html', {root: path.join(__dirname, './views')})
+	resp.sendFile('home.html', {root: path.join(__dirname, './views')});
 })
 
 var port = 2048;
