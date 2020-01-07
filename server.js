@@ -22,9 +22,9 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'views', 'home.html'));
 });
 
-// app.get('/', (req, res) => {
-// 	res.sendFile(path.join(__dirname, 'public', 'views', 'events.html'));
-// });
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'views', 'events.html'));
+});
 
 const port = 2048;
 app.listen(port);
