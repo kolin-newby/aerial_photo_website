@@ -4,6 +4,8 @@ const path = require('path');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
 
+app.set('view engine', 'pug');
+
 var app = express();
 app.use(helmet());
 
@@ -22,7 +24,7 @@ app.use(helmet());
 
 // // home page
 app.get('/', (req, res) => {
-	response.send('test')
+	response.render('home');
 	// res.sendFile(path.join(__dirname + 'public' + 'views' + 'home.html'));
 });
 
