@@ -1,6 +1,8 @@
 // Add the express framework
-const app = require('express');
+const express = require('express');
 const path = require('path');
+
+const app = express();
 
 //Create Database Connection
 // ****
