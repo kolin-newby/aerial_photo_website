@@ -20,11 +20,11 @@ app.use(express.static('public/resources'));
 
 // home page
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'views', 'home.html'));
+	res.sendFile(path.join(__dirname,'home.html'));
 });
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'views', 'events.html'));
+	res.sendFile(path.join(__dirname,'events.html'));
 });
 
 app.get('/', (req, res) => {
