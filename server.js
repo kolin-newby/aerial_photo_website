@@ -9,13 +9,13 @@ const app = express();
 //db config
 // ****
 
-app.use(express.static(path.join(__dirname, 'views')));
+// app.use(express.static(path.join(__dirname, 'views')));
 
 
 // home page
-// app.get('/', (req, res) => {
-// 	res.sendFile(path.join(__dirname, 'views', 'home.html'));
-// });
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'views', 'home.html'));
+});
 
 const port = 3000;
 app.listen(port);
