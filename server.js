@@ -8,6 +8,8 @@ app.get('/home', (req, res) => {
 	response.sendFile(__dirname + 'views/home.html')
 })
 
+console.log(__dirname);
+
 var port = 2048;
 app.listen(port, () => {
 	console.log('listening on port ' + port);
