@@ -9,7 +9,7 @@ const app = express();
 //db config
 // ****
 
-app.use(express.static('./views'));
+app.use(express.static('views'));
 
 
 // home page
@@ -17,6 +17,6 @@ app.use(express.static('./views'));
 // 	res.sendFile(path.join(__dirname, 'views', 'home.html'));
 // });
 
-const port = 3000;
+const port = 2048;
 app.listen(port);
 console.log('listening on port ' + port);
