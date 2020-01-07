@@ -12,27 +12,29 @@ app.use(helmet());
 //db config
 // ****
 
-console.log(__dirname)
+// console.log(__dirname)
 
-//set static folder
-app.use(express.static('public/views'));
-app.use(express.static('public/resources'));
-// app.use(bodyParser());
+// //set static folder
+// app.use(express.static('public/views'));
+// app.use(express.static('public/resources'));
+// // app.use(bodyParser());
 
 
-// home page
+// // home page
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname + 'public' + 'views' + 'home.html'));
+	response.send('test')
+	// res.sendFile(path.join(__dirname + 'public' + 'views' + 'home.html'));
 });
 
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname + 'public' + 'views' + 'events.html'));
-});
+// app.get('/', (req, res) => {
+// 	res.sendFile(path.join(__dirname + 'public' + 'views' + 'events.html'));
+// });
 
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname + 'public' + 'views' + 'realty_comm.html'));
-});
+// app.get('/', (req, res) => {
+// 	res.sendFile(path.join(__dirname + 'public' + 'views' + 'realty_comm.html'));
+// });
 
 const port = 2048;
-app.listen(port);
-console.log('listening on port ' + port);
+app.listen(port, () => {
+	console.log('listening on port ' + port);
+});
