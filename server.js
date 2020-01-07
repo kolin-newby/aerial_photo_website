@@ -9,7 +9,7 @@ const app = express();
 //db config
 // ****
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static('./views'));
 
 
 // home page
