@@ -1,9 +1,11 @@
 // Add the express framework
 const express = require('express');
 const path = require('path');
+const helmet = require('helmet');
 const bodyParser = require('body-parser');
 
 var app = express();
+app.use(helmet());
 
 //Create Database Connection
 // ****
