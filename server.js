@@ -9,7 +9,7 @@ const app = express();
 //db config
 // ****
 
-app.use(express.static('views'));
+app.use(express.static(path.join('app_data')));
 
 
 // home page
