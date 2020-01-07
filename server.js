@@ -10,13 +10,13 @@ const app = express();
 // ****
 
 //set static folder
-app.use(express.static(path.join('app_data', 'resources', 'img')));
+app.use(express.static(path.join(__dirname, 'app_data')));
 
 
 // home page
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'views', 'home.html'));
-});
+// app.get('/', (req, res) => {
+// 	res.sendFile(path.join(__dirname, 'views', 'home.html'));
+// });
 
 const port = 2048;
 app.listen(port);
