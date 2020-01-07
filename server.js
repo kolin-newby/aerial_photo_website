@@ -13,6 +13,6 @@ app.use(express.static(__dirname + '/public'));
 // })
 
 var port = 2048;
-app.listen(port, => {
+app.listen(port, () => {
 	console.log('listening on port ' + port);
 };
