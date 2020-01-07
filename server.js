@@ -1,6 +1,6 @@
-const express = require('express'); // Add the express framework
+// Add the express framework
+const app = require('express');
 const path = require('path');
-let app = express();
 
 //Create Database Connection
 // ****
@@ -9,8 +9,8 @@ let app = express();
 
 // home page
 app.get('/', function(req, resp){
-	resp.sendFile('home.html', {root: path.join(__dirname, './views')});
-})
+	resp.sendFile(path.join(__dirname, 'views', 'home.html'));
+});
 
 var port = 2048;
 app.listen(port);
