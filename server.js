@@ -5,7 +5,7 @@ app.use(express.static(__dirname + '/public'));
 
 // home page
 app.get('/home', (req, res) => {
-	response.sendFiles(__dirname + 'views/home.html')
+	response.sendFile(__dirname + 'views/home.html')
 })
 
 var port = 2048;
