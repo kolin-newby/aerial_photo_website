@@ -8,8 +8,8 @@ const path = require('path');
 // ****
 
 // home page
-app.get('/', function(req, resp){
-	resp.sendFile(path.join(__dirname, 'views', 'home.html'));
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'views', 'home.html'));
 });
 
 var port = 2048;
