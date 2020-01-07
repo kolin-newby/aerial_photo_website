@@ -10,7 +10,7 @@ const app = express();
 // ****
 
 //set static folder
-app.use(express.static(path.join(__dirname, 'app_data')));
+app.use(express.static(path.join(__dirname + 'app_data')));
 
 
 // home page
