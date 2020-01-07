@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/public/views/home.html')
 })
 
+app.get('/', (req, res) => {
+	res.sendFile(__dirname + '/public/views/events.html')
+})
+
 // console.log(__dirname);
 
 var port = 2048;
