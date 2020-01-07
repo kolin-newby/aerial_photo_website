@@ -8,7 +8,7 @@ let app = express();
 // ****
 
 // home page
-app.get('/' function(req, resp){
+app.get('/', function(req, resp){
 	resp.sendFile('home.html', {root: path.join(__dirname, './views')});
 })
 
