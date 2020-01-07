@@ -13,7 +13,8 @@ var app = express();
 console.log(__dirname)
 
 //set static folder
-app.use(express.static('public'));
+app.use(express.static('public/views'));
+app.use(express.static('public/resources'));
 // app.use(bodyParser());
 
 
@@ -22,9 +23,9 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'views', 'home.html'));
 });
 
-app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, 'public', 'views', 'events.html'));
-});
+// app.get('/', (req, res) => {
+// 	res.sendFile(path.join(__dirname, 'public', 'views', 'events.html'));
+// });
 
 const port = 2048;
 app.listen(port);
