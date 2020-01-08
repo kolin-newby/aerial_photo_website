@@ -5,12 +5,16 @@ app.use(express.static(__dirname + '/public'));
 
 // home page
 
-app.get('/', (req, res) => {
+app.get('/home.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/home.html')
 })
 
 app.get('/events.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/events.html')
+})
+
+app.get('/realty_comm.html', (req, res) => {
+	res.sendFile(__dirname + '/public/views/realty_comm.html')
 })
 
 // console.log(__dirname);
