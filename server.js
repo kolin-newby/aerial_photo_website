@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/public/views/home.html')
 })
 
-app.get('/events', (req, res) => {
+app.get('/events.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/events.html')
 })
 
