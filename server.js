@@ -5,7 +5,7 @@ app.use(express.static(__dirname + '/public'));
 
 // home page
 
-app.get('/home.html', (req, res) => {
+app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/public/views/home.html')
 })
 
