@@ -21,6 +21,10 @@ app.get('/realty_comm.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/realty_comm.html')
 })
 
+app.get('/about_me.html', (req, res) => {
+	res.sendFile(__dirname + '/public/views/about_me.html')
+})
+
 // console.log(__dirname);
 
 var port = 2048;
