@@ -13,6 +13,10 @@ app.get('/home.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/home.html')
 })
 
+app.get('/about_me.html', (req, res) => {
+	res.sendFile(__dirname + '/public/views/about_me.html')
+})
+
 app.get('/events.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/events.html')
 })
@@ -20,11 +24,6 @@ app.get('/events.html', (req, res) => {
 app.get('/realty_comm.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/realty_comm.html')
 })
-
-app.get('/about_me.html', (req, res) => {
-	res.sendFile(__dirname + '/public/views/about_me.html')
-})
-
 // console.log(__dirname);
 
 var port = 2048;
