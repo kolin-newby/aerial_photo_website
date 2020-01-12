@@ -17,7 +17,7 @@ app.get('/about_me.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/about_me.html')
 })
 
-app.get('/events.html', (req, res) => {
+app.get('/events', (req, res) => {
 	res.sendFile(__dirname + '/public/views/events.html')
 })
 
