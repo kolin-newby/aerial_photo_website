@@ -21,7 +21,7 @@ app.get('/events.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/events.html')
 })
 
-app.get('/realty_comm.html', (req, res) => {
+app.get('/realty_commercial', (req, res) => {
 	res.sendFile(__dirname + '/public/views/realty_comm.html')
 })
 // console.log(__dirname);
