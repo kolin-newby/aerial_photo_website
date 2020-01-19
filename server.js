@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/public/views/home.html')
 })
 
-app.get('/home', (req, res) => {
-	res.sendFile(__dirname + '/public/views/home')
+app.get('/home.html', (req, res) => {
+	res.sendFile(__dirname + '/public/views/home.html')
 })
 
 app.get('/events.html', (req, res) => {
