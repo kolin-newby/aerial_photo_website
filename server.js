@@ -22,9 +22,9 @@ app.get('/realty_comm.html', (req, res) => {
 })
 // console.log(__dirname);
 
-// app.get('/about_me.html', (req, res) => {
-// 	res.sendFile(__dirname + '/public/views/about_me.html')
-// })
+app.get('/about_me.html', (req, res) => {
+	res.sendFile(__dirname + '/public/views/about_me.html')
+})
 
 var port = 2048;
 app.listen(port, () => {
