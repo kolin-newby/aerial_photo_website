@@ -1,5 +1,10 @@
 const express = require('express'); // Add the express framework
+
+const helmet = require('helmet');
+
 let app = express();
+
+app.use(helmet());
 
 app.use(express.static(__dirname + '/public'));
 
