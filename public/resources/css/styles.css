@@ -70,14 +70,48 @@ body, html {
   display: none;
 }
 /*----------------------------------------------------------------------------------------*/
-/*about me color bar*/
-/*.colorbar {
-  background-image: linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
-  height: 50%;
+.myContainer {
+  position: relative;
+  width: 50%;
+}
+
+.customImgLink {
+  border: 1px solid #333;
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
- }*/
+  opacity: 0;
+  border-radius: 15px;
+  transition: .5s ease;
+  background-color: #333;
+  vertical-align: middle;
+}
 
+.myContainer:hover .overlay {
+  opacity: 0.65;
+}
 
+.text {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 /*----------------------------------------------------------------------------------------*/
 /*media queries*/

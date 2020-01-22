@@ -1,6 +1,6 @@
 const express = require('express'); // Add the express framework
 
-const helmet = require('helmet');
+const helmet = require('helmet'); //add helmet for some security
 
 let app = express();
 
