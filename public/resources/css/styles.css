@@ -2,12 +2,36 @@ body, html {
   height: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+
+div {
+  background: transparent;
+}
+
+p {
+  color: #05386B;
+}
+
+h2 {
+  color: #05386B;
+}
+
+h5 {
+  color: #05386B;
+}
+
+>>>>>>> Stashed changes
 /*----------------------------------------------------------------------------------------*/
 /*home page background image*/
 
 .bg {
   /* The image used */
+<<<<<<< Updated upstream
   background-image: url("../img/bg2.jpg");
+=======
+  background-color: #8EE4AF;
+>>>>>>> Stashed changes
 
   /* Half height */
   height: 50%;
@@ -23,7 +47,11 @@ body, html {
 
 .bg_secondary{
   /* The image used */
+<<<<<<< Updated upstream
   background-image: url("../img/bg2.jpg");
+=======
+  background-color: #8EE4AF;
+>>>>>>> Stashed changes
 
   height: 30%;
 
@@ -38,7 +66,7 @@ body, html {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #8EE4AF;
   overflow: hidden;
 }
 
@@ -46,7 +74,7 @@ body, html {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #05386B;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -55,14 +83,24 @@ body, html {
 
 /* Change the color of links on hover */
 .topnav a:hover {
+<<<<<<< Updated upstream
   background-color: #ddd;
   color: black;
+=======
+  background-color: #EDF5E1;
+  color: #05386B;
+>>>>>>> Stashed changes
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
+<<<<<<< Updated upstream
   background-color: #27FFF5;
   color: #333;
+=======
+  background-color: #05386B;
+  color: #8EE4AF;
+>>>>>>> Stashed changes
 }
 
 /* Hide the link that should open and close the topnav on small screens */
