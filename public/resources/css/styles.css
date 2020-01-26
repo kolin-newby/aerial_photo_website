@@ -1,12 +1,17 @@
 body, html {
   height: 100%;
+  background-color: #8EE4AF;
 }
 
 div {
-  background: transparent;
+  background-color: #8EE4AF;
 }
 
 p {
+  color: #05386B;
+}
+
+h1 {
   color: #05386B;
 }
 
@@ -14,18 +19,19 @@ h2 {
   color: #05386B;
 }
 
+h4 {
+  color: #05386B;
+}
+
 h5 {
   color: #05386B;
 }
 
-/*>>>>>>> Stashed changes*/
 /*----------------------------------------------------------------------------------------*/
 /*home page background image*/
 
 .bg {
-  /* The image used */
   background-color: #8EE4AF;
-/*>>>>>>> Stashed changes*/
 
   /* Half height */
   height: 50%;
@@ -42,8 +48,6 @@ h5 {
 .bg_secondary{
   /* The image used */
   background-color: #8EE4AF;
-/*>>>>>>> Stashed changes*/
-
   height: 30%;
 
   /* Center and scale the image nicely */
@@ -51,6 +55,25 @@ h5 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*----------------------------------------------------------------------------------------*/
+/*custome button*/
+
+.cust_button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: #8EE4AF;
+  color: #05386B;
+  width: 30%;
+  align-self: center;
+  overflow: hidden;
+}
+
+.cust_button:hover {
+  background-color: #05386B;
+  color: #8EE4AF;
+}
+
 
 /*----------------------------------------------------------------------------------------*/
 /*navigation bar style*/
@@ -76,14 +99,12 @@ h5 {
 .topnav a:hover {
   background-color: #EDF5E1;
   color: #05386B;
-/*>>>>>>> Stashed changes*/
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #05386B;
   color: #8EE4AF;
-/*>>>>>>> Stashed changes*/
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -114,7 +135,7 @@ h5 {
   opacity: 0;
   border-radius: 15px;
   transition: .5s ease;
-  background-color: #333;
+  background-color: #05386B;
   vertical-align: middle;
 }
 
@@ -123,7 +144,7 @@ h5 {
 }
 
 .text {
-  color: white;
+  color: #EDF5E1;
   font-size: 24px;
   position: absolute;
   top: 50%;
@@ -137,29 +158,6 @@ h5 {
 /*----------------------------------------------------------------------------------------*/
 /*contact collapsible*/
 
-.collapsible {
-  background-color: #333;
-  color: #eee;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: center;
-  outline: none;
-  border: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #ccc;
-  color: #333;
-}
-
-.contact-form {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #ccc;
-}
 
 /*----------------------------------------------------------------------------------------*/
 /*media queries*/
@@ -191,3 +189,11 @@ h5 {
     display: block;
     text-align: left;
 }
+
+/*Color Palette
+#05386B - Blue
+#379683 - Dark Mint
+#5CDB95 - Mint
+#8EE4AF - Light Mint
+#EDF5E1 - Soft White
+*/
