@@ -6,7 +6,7 @@ body, html {
   height: 100%;
   /*background-color: #8EE4AF;*/
 
-  background: linear-gradient(200deg, #8EE4AF 0%, #5CDB95 30%, #379683 75%, #05386B 100%);
+  background: linear-gradient(140deg, #8EE4AF 10%, #5CDB95 40%, #379683 75%, #05386B 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -74,27 +74,6 @@ h6 {
 .bg {
   background: transparent;
 
-  /* Half height */
-  /*height: 50%;*/
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*----------------------------------------------------------------------------------------*/
-/*secondary page background image*/
-
-.bg_secondary{
-  /* The image used */
-  background-color: #8EE4AF;
-  height: 30%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -147,8 +126,8 @@ h6 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-/*  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;*/
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   background-color: #379683;
   color: #8EE4AF;
   border-radius: 25px;
