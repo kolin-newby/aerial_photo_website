@@ -2,9 +2,6 @@ body, html {
   height: 100%;
 }
 
-<<<<<<< Updated upstream
-=======
-
 div {
   background: transparent;
 }
@@ -21,17 +18,14 @@ h5 {
   color: #05386B;
 }
 
->>>>>>> Stashed changes
+/*>>>>>>> Stashed changes*/
 /*----------------------------------------------------------------------------------------*/
 /*home page background image*/
 
 .bg {
   /* The image used */
-<<<<<<< Updated upstream
-  background-image: url("../img/bg2.jpg");
-=======
   background-color: #8EE4AF;
->>>>>>> Stashed changes
+/*>>>>>>> Stashed changes*/
 
   /* Half height */
   height: 50%;
@@ -47,11 +41,8 @@ h5 {
 
 .bg_secondary{
   /* The image used */
-<<<<<<< Updated upstream
-  background-image: url("../img/bg2.jpg");
-=======
   background-color: #8EE4AF;
->>>>>>> Stashed changes
+/*>>>>>>> Stashed changes*/
 
   height: 30%;
 
@@ -83,24 +74,16 @@ h5 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-<<<<<<< Updated upstream
-  background-color: #ddd;
-  color: black;
-=======
   background-color: #EDF5E1;
   color: #05386B;
->>>>>>> Stashed changes
+/*>>>>>>> Stashed changes*/
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-<<<<<<< Updated upstream
-  background-color: #27FFF5;
-  color: #333;
-=======
   background-color: #05386B;
   color: #8EE4AF;
->>>>>>> Stashed changes
+/*>>>>>>> Stashed changes*/
 }
 
 /* Hide the link that should open and close the topnav on small screens */
