@@ -19,11 +19,19 @@ h2 {
   color: #05386B;
 }
 
+h3 {
+  color: #05386B;
+}
+
 h4 {
   color: #05386B;
 }
 
 h5 {
+  color: #05386B;
+}
+
+h6 {
   color: #05386B;
 }
 
@@ -62,15 +70,16 @@ h5 {
 .cust_button {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  background-color: #8EE4AF;
-  color: #05386B;
+  background-color: #05386B;
+  color: #8EE4AF;
   width: 30%;
   align-self: center;
+  align-content: center;
   overflow: hidden;
 }
 
 .cust_button:hover {
-  background-color: #05386B;
+  background-color: #379683;
   color: #8EE4AF;
 }
 
