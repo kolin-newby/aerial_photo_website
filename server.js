@@ -31,6 +31,10 @@ app.get('/about_me.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/about_me.html')
 })
 
+app.get('/gallery.html', (req, res) => {
+	res.sendFile(__dirname + '/public/views/gallery.html')
+})
+
 var port = 2048;
 app.listen(port, () => {
 	console.log('listening on port ' + port);
