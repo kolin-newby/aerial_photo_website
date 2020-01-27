@@ -9,7 +9,10 @@ body, html {
   background: linear-gradient(140deg, #8EE4AF 10%, #5CDB95 40%, #379683 75%, #05386B 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 div {
