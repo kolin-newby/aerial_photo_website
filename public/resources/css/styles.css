@@ -119,9 +119,6 @@ h6 {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  align-content: center;
-  align-items: center;
-  align-self: center;
 
   font-family: 'Comfortaa', cursive;
   font-weight:bold;
@@ -135,10 +132,6 @@ h6 {
   background-color: #379683;
   color: #8EE4AF;
   border-radius: 25px;
-  max-width: 50%;
-  align-content: center;
-  align-items: center;
-  align-self: center;
 }
 
 /* Add an active class to highlight the current page */
