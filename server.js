@@ -42,7 +42,7 @@ app.get('/gallery.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/gallery.html')
 })
 
-var port = 8080;
+var port = 80;
 
 https.createServer({
 	key: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem'),
