@@ -45,9 +45,7 @@ app.get('/gallery.html', (req, res) => {
 var port = 8080;
 
 
-http.createServer().listen(80, () => {
-	console.log('http listening')
-})
+var http = express.createServer();
 
 http.get('*', function(req, res) {
 	res.redirect('https://' + req.header.host + req.url);
