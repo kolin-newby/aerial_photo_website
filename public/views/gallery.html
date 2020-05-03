@@ -6,50 +6,26 @@
 <link rel="shortcut icon" type="text/css" href="../resources/img/N_logo.png">
   <head>
   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://kit.fontawesome.com/c7297b5865.js" crossorigin="anonymous"></script>
 
   	<link rel="stylesheet" href="../resources/css/styles.css">
     <title>Newby Aerial Photography</title>
   </head>
   <body onload="navFunction(); navCollapse();">
   	<br>
-  	<div class="topnav" id="myTopnav">
-		<a href="home.html">Home</a>
-		<a href="realty_comm.html">Real Estate</a>
-		<a href="events.html">Inspection Services</a>
-		<a href="gallery.html" class="active">Photo Gallery</a>
-		<a href="javascript:void(0);" class="icon" onclick="navFunction()">
-			<i class="fa fa-bars"></i>
-		</a>
-	</div>
-
-  	<div class="bg">
-  		
-	</div>
-	<div class="container">
-		<center>
-			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="../resources/gall/GR1.jpg" alt="First slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="../resources/gall/GR2.jpg" alt="Second slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="../resources/gall/GR3.jpg" alt="Third slide">
-					</div>
-				</div>
-				<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				    <span class="sr-only">Previous</span>
-			  	</a>
-			  	<a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-			  	</a>
-			</div>
-		</center>
-	</div>
+    <div class="menu" id="navbar">
+  		<a href="home.html"><i class="icon zoom custom-icon"> Home</i></a>
+      <i class="bar"></i>
+  		<a href="realty_comm.html"><i class="icon zoom fas fa-home"> Real Estate</i></a>
+      <i class="bar"></i>
+  		<a href="events.html"><i class="icon zoom main-menu fas fa-industry"> Inspection</i></a>
+      <i class="bar"></i>
+  		<a href="gallery.html" class="active"><i class="icon zoom fas fa-images"> Gallery</i></a>
+      <i class="bar"></i>
+      <a href="about_me.html"><i class="icon zoom left-pad fas fa-portrait"> About</i></a>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+  			<i class="menu-icon zoom fas fa-bars"></i>
+  		</a>
+  	</div>
   </body>
 </html>

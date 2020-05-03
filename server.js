@@ -3,33 +3,13 @@ const express = require('express'); // Add the express framework
 const helmet = require('helmet'); //add helmet for some security
 
 const fs = require('fs');
+
 const https = require('https');
 
 const app = express();
 
- //certificate
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/newbyap.com/cert.pem', 'utf8');
-
-
-//---------------------------
-
 
 app.use(helmet());
-
-
-//starting both http and https servers
-const httpServer = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
-
-httpServer.listen(80, () => {
-	console.log('HTTP Server running on port 80');
-});
-
-httpsServer.listen(443, () => {
-	console.log('HTTPS Server running on port 443');
-});
-
 
 
 app.use(express.static(__dirname + '/public', { dotfiles: 'allow'} ));

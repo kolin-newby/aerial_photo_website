@@ -4,10 +4,10 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="../resources/js/navbar.js"></script>
-<link rel="shortcut icon" type="text/css" href="../resources/img/lense_logo.png">
+<link rel="shortcut icon" type="text/css" href="../resources/img/lens_logo.png">
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/c7297b5865.js" crossorigin="anonymous"></script>
 
 	<!-- Load my css styles sheet -->
 	<link rel="stylesheet" href="../resources/css/styles.css">
@@ -15,13 +15,18 @@
 </head>
 	<body bgcolor="#8EE4AF" onload="navFunction(); navCollapse();">
 		<br>
-		<div class="topnav" id="myTopnav">
-			<a href="home.html" class="active">Home</a>
-			<a href="realty_comm.html">Real Estate</a>
-			<a href="events.html">Inspection Services</a>
-			<a href="gallery.html">Photo Gallery</a>
+		<div class="menu" id="navbar">
+			<a href="home.html"><i class="icon zoom custom-icon"> Home</i></a>
+			<i class="bar"></i>
+			<a href="realty_comm.html"><i class="icon zoom fas fa-home"> Real Estate</i></a>
+			<i class="bar"></i>
+			<a href="events.html"><i class="icon zoom main-menu fas fa-industry"> Inspection</i></a>
+			<i class="bar"></i>
+			<a href="gallery.html" class="active"><i class="icon zoom fas fa-images"> Gallery</i></a>
+			<i class="bar"></i>
+			<a href="about_me.html"><i class="icon zoom left-pad fas fa-portrait"> About</i></a>
 			<a href="javascript:void(0);" class="icon" onclick="navFunction()">
-				<i class="fa fa-bars"></i>
+				<i class="menu-icon zoom fas fa-bars"></i>
 			</a>
 		</div>
 
@@ -32,7 +37,7 @@
 						<div class="row flex-sm-nowrap">
 							<div class="col-md" id="optional">
 								<center>
-									<img src="../resources/img/lense_logo_blue.svg" style="max-width:100%;height:auto;" alt="NewbyAP logo" id="home_logo" height="250" width="250">
+									<img src="../resources/img/lens_logo_blue.svg" style="max-width:80%;height:auto;" alt="NewbyAP logo" id="home_logo" height="200" width="200">
 								</center>
 							</div>
 						</div>
@@ -40,8 +45,8 @@
 						<div class="row flex-sm-nowrap">
 							<div class="col-md">
 								<br><br><br>
-								<center><h1><font color="#05386B">Newby Aerial Photography</font></h1></center>
-								<center><h4><font color="#05386B">Aerial Photography Service for any job</font></h4></center>
+								<center><h1><font color="#333">Newby Aerial Photography</font></h1></center>
+								<center><h4><font color="#333">Aerial photography service for any job!</font></h4></center>
 							</div>
 						</div>
 					</div>
@@ -56,7 +61,10 @@
 								<h2 class="card-title"><font>Business Goal</font></h2>
 								<br>
 								<p class="card-text">Newby Aerial Photography strives to provide high quality aerial photography services to the greater Boulder, area at a competitive price.</p> <br>
-								<h5 class="card-text">Take a look below to see what you're missing!</h5>
+								<div>
+									<a href="https://www.instagram.com/newbyap/" class="icon-cust fab fa-instagram" target="_blank" style="color: #333"></a>
+									<a href="" class="icon-cust fab fa-twitter" style="color: #333"></a>
+								</div>
 							</div>
 						</div>
 					</center>
@@ -71,27 +79,10 @@
 								<br>
 								<h5 class="card-text">Put my skills and passion to work for you!</h5>
 							</div>
-							<div>
-								<a class="btn cust_button" href="about_me.html">More About Me</a>
-							</div>
 						</div>
 					</center><br>
 				</div>
 			</div><br><br>
-			<div class="row">
-				<center>
-					<div class="col-sm">
-						<div class="myContainer">
-							<img src="../resources/img/house_ex.jpg" class="customImgLink" alt="aerial house image">
-							<a href="realty_comm.html">
-								<div class="overlay">
-									<div style="background: transparent;" class="text">Aerial Realtography</div>
-								</div>
-							</a>
-						</div>
-					</div><br><br>
-				</center>
-			</div>
 		</div>
 	</body>
 </html>
