@@ -50,15 +50,15 @@ http.createServer(app).listen(80, () => {
 })
 
 
-https.createServer({
-	key: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem'),
+// https.createServer({
+// 	key: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem'),
 
-	cert: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/cert.pem'),
+// 	cert: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/cert.pem'),
 
-	ca: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/chain.pem')
-}, app).listen(port, () => {
-	console.log('Listening on port ' + port)
-})
+// 	ca: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/chain.pem')
+// }, app).listen(port, () => {
+// 	console.log('Listening on port ' + port)
+// })
 
 // app.listen(port, () => {
 // 	console.log('listening on port ' + port);
