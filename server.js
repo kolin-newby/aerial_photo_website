@@ -1,6 +1,6 @@
 const express = require('express'); // Add the express framework
 
-const helmet = require('helmet'); //add helmet for some security
+const helmet = require('helmet'); //add helmet for some safety
 
 const fs = require('fs');
 
@@ -12,7 +12,7 @@ const app = express();
 app.use(helmet());
 
 
-app.use(express.static(__dirname + '/public', { dotfiles: 'allow'} ));
+app.use(express.static(__dirname + '/public'));
 
 // home page
 
