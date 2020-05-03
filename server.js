@@ -5,6 +5,7 @@ const helmet = require('helmet'); //add helmet for some safety
 const fs = require('fs');
 
 const https = require('https');
+const http = require('http');
 
 const app = express();
 
@@ -41,7 +42,13 @@ app.get('/gallery.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/gallery.html')
 })
 
-var port = 80;
+var port = 81;
+
+
+http.createServer(app).listen(80, () => {
+	console.log('http listening')
+})
+
 
 https.createServer({
 	key: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem'),
