@@ -41,7 +41,7 @@ app.get('/gallery.html', (req, res) => {
 	res.sendFile(__dirname + '/public/views/gallery.html')
 })
 
-var port = 2048;
+var port = 80;
 app.listen(port, () => {
 	console.log('listening on port ' + port);
 });
