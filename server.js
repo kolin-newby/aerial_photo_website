@@ -50,7 +50,7 @@ https.createServer({
 
 	ca: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/chain.pem')
 }, app).listen(port, () => {
-	console.log('Listening...')
+	console.log('Listening on port ' + port)
 })
 
 // app.listen(port, () => {
