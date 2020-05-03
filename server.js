@@ -42,6 +42,17 @@ app.get('/gallery.html', (req, res) => {
 })
 
 var port = 80;
-app.listen(port, () => {
-	console.log('listening on port ' + port);
-});
+
+https.createServer({
+	key: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem'),
+
+	cert: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/cert.pem'),
+
+	ca: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/chain.pem')
+}, app).listen(port, () => {
+	console.log('Listening...')
+})
+
+// app.listen(port, () => {
+// 	console.log('listening on port ' + port);
+// });
