@@ -44,6 +44,13 @@ app.get('/gallery.html', (req, res) => {
 
 var port = 443;
 
+app.use(function(req, res, next) {
+      if ((req.get('X-Forwarded-Proto') !== 'https')) {
+        res.redirect('https://' + req.get('Host') + req.url);
+      } else
+        next();
+	});
+
 https.createServer({
 	key: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem'),
 
