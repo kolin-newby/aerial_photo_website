@@ -12,19 +12,21 @@
   </head>
   <body onload="navFunction(); navCollapse();">
   	<br>
-  	<div class="menu" id="navbar">
-		<a href="home.html"><i class="icon zoom custom-icon"> Home</i></a>
-		<i class="bar"></i>
-		<a href="realty_comm.html"><i class="active icon zoom fas fa-home"> Real Estate</i></a>
-		<i class="bar"></i>
-		<a href="events.html"><i class="icon zoom main-menu fas fa-industry"> Inspection</i></a>
-		<i class="bar"></i>
-		<a href="gallery.html" class="active"><i class="icon zoom fas fa-images"> Gallery</i></a>
-		<i class="bar"></i>
-		<a href="about_me.html"><i class="icon zoom left-pad fas fa-portrait"> About</i></a>
-		<a href="javascript:void(0);" class="icon" onclick="navFunction()">
-			<i class="menu-icon zoom fas fa-bars"></i>
+  	<div class="menu" id="main_navbar">
+  		<a href="javascript:void(0);" class="icon dropdown-icon" id="responsive_menu_bars" onclick="navFunction()">
+			<i class="menu dropdown-icon fas fa-bars"></i>
 		</a>
+  		<i class="bar"></i>
+		<a href="home.html" class="non-active"><i class="icon menu-icon custom-icon"> Home</i></a>
+		<i class="bar"></i>
+		<a href="realty_comm.html" class="active"><i class="icon menu-icon fas fa-home"> Real Estate</i></a>
+		<i class="bar"></i>
+		<a href="events.html" class="non-active"><i class="icon menu-icon main-menu fas fa-industry"> Inspection</i></a>
+		<i class="bar"></i>
+		<a href="gallery.html" class="non-active"><i class="icon menu-icon fas fa-images"> Gallery</i></a>
+		<i class="bar"></i>
+		<a href="about_me.html" class="non-active"><i class="icon menu-icon left-pad fas fa-portrait"> About</i></a>
+		<i class="bar"></i>
 	</div>
 
   	<div class="bg">
