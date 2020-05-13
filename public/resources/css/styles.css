@@ -198,10 +198,11 @@ h6 {
 
 .menu li {
   display: inline;
+  text-decoration: none;
 }
 
 .menu a {
-
+  text-decoration: none;
   font-family: 'Noto Serif JP', serif;
 }
 
