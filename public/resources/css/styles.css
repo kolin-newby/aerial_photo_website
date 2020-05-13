@@ -196,16 +196,20 @@ h6 {
   text-align: center;
 }
 
+.menu li {
+  display: inline;
+}
+
 .menu a {
 
   font-family: 'Noto Serif JP', serif;
 }
 
-.menu a.active {
+.menu li.active {
   text-decoration: none;
 }
 
-.menu a.non-active {
+.menu li.non-active {
   text-decoration: none;
 }
 
@@ -272,30 +276,29 @@ h6 {
   }
 
   .dropdown-icon {
-    display: inline;
-    position: inherit;
-    top: 50%;
+    display: block;
+    position: absolute;
+    /*top: 50%;*/
   }
 
-  .menu a.non-active {
+  .menu li.non-active {
     display: none;
   }
 
-  .menu a.active {
-    display: inline-block;
-    position: relative;
+  .menu li.active {
+    padding-bottom: 12px;
+    padding-top: 12px; 
+    display: block;
   }
 
-  .menu.responsive a {
+  .menu.responsive li {
     padding-bottom: 12px;
     padding-top: 12px;
-    position: relative;
     display: block;
     text-align: center;
   }
 
   .menu.responsive {
-    align-content: center;
     -ms-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
