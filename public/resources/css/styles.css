@@ -278,7 +278,6 @@ h6 {
   .dropdown-icon {
     display: block;
     position: absolute;
-    /*top: 50%;*/
   }
 
   .menu li.non-active {
@@ -297,22 +296,7 @@ h6 {
     display: block;
     text-align: center;
   }
-
-  .menu.responsive {
-    -ms-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
 }
-
-/*@media (max-width: 800px) {
-	#optional{
-		display: none;
-	}
-}*/
-
-
-
 /*Color Palette
 #05386B - Blue
 #379683 - Dark Mint
