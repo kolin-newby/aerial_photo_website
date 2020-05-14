@@ -107,23 +107,6 @@ h6 {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .cust_column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .cust_column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-
 /*----------------------------------------------------------------------------------------*/
 /*navigation bar style*/
 
@@ -298,6 +281,23 @@ h6 {
     text-align: center;
   }
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .cust_column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .cust_column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 /*Color Palette
 #05386B - Blue
 #379683 - Dark Mint
