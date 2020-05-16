@@ -4,6 +4,8 @@ const helmet = require('helmet'); //add helmet for some safety
 
 const fs = require('fs');
 
+const path = require('path');
+
 const https = require('https');
 const http = require('http');
 
@@ -55,9 +57,13 @@ var http_port = 80;
 // 	});
 
 
+redi.get('/', function(req, res) {
+	res.sendFile(path.join(__dirname + '/public/redirect.html'))
+});
+
 
 http.createServer(redi).listen(http_port, () => {
-	location.replace("https://newbyap.com")
+	console.log('redirecting')
 })
 
 
