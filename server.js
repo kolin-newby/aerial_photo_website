@@ -57,7 +57,7 @@ var http_port = 80;
 
 
 http.createServer(redi).listen(http_port, () => {
-	window.location.replace("https://newbyap.com")
+	location.replace("https://newbyap.com")
 })
 
 
