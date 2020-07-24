@@ -10,11 +10,9 @@ const https = require('https');
 const http = require('http');
 
 const app = express();
-const redi = express();
 
 
 app.use(helmet());
-redi.use(helmet());
 
 
 app.use(express.static(__dirname + '/public'));
@@ -47,7 +45,6 @@ app.get('/gallery.html', (req, res) => {
 })
 
 var port = 443;
-var http_port = 80;
 
 // app.use(function(req, res, next) {
 //       if ((req.get('X-Forwarded-Proto') !== 'https')) {
@@ -57,16 +54,13 @@ var http_port = 80;
 // 	});
 
 
-redi.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname + '/public/redirect.html'))
-});
+var http = express.createServer();
 
-
-http.createServer(redi).listen(http_port, () => {
-	console.log('redirecting')
+http.get('*', function(req, res) {
+	res.redirect('https://' + req.header.host + req.url);
 })
 
-
+http.listen(80);
 
 https.createServer({
 	key: fs.readFileSync('/etc/letsencrypt/live/newbyap.com/privkey.pem'),
